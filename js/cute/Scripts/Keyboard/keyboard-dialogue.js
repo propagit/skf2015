@@ -1,1 +1,0 @@
-var OxO7534=["value","keyboard_area"]; function afficher(Oxb){ document.getElementById(OxO7534[0x1])[OxO7534[0x0]]=Oxb ;}  ; function rechercher(){return document.getElementById(OxO7534[0x1])[OxO7534[0x0]];}  ;
