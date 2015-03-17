@@ -97,17 +97,43 @@
 <?php
 	$opening = $this->menu_model->get_opening_date();
 	#print_r($opening);
-?>  
+?> 
+
+<?php if(ENVIRONMENT == 'development'){ ?>
+<!-- jQuery -->
+<script src="<?=base_url()?>frontend-assets/js/jquery-1.11.2.min.js"></script>
+<!-- BSJS-->
+<script src="<?=base_url()?>frontend-assets/bootstrap-3.2.2/js/bootstrap.min.js"></script>
+
+<?php }else{ ?>  
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- BSJS-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<?php } ?>
+
+
+<!--timer-->
+<script src="<?=base_url()?>frontend-assets/js/jquery.countdown-2.0.2/jquery.plugin.min.js"></script>
+<script src="<?=base_url()?>frontend-assets/js/jquery.countdown-2.0.2/jquery.countdown.min.js"></script>
+<!--app.script.js-->
+<script src="<?=base_url()?>frontend-assets/js/app.scripts.js"></script>
     
 <script>
-//$('#sponsors').carousel(interval)
-
 $('#countdown-timer').countdown({
 	until: new Date(2015,5-1,24),
 	padZeroes: true,
 	labels: ['YEARS', 'MONTHS', 'WEEKS', 'DAYS', 'HOURS', 'MINS', 'SECS'],
 	
 }); 
+
+$(function(){
+	initLadders();
+	
+	setTimeout(function(){
+		initLadders();
+	},400);
+});
 </script>
 
 

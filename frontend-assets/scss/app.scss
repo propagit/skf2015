@@ -593,7 +593,7 @@ $tile_caption_height:40px;
 	width:100%;
 	
 	a{
-		color:$color6 !important;	
+		color:$color5 !important;	
 	}
 	
 	img{
@@ -783,9 +783,10 @@ $tile_caption_height:40px;
 	background-image:url(../img/ladder.png);
 	position: absolute;
 	background-repeat: no-repeat;
-	width: 535px;
-	height: 495px;
+	/*width: 535px;
+	height: 495px;*/
 	background-position:center center;	
+	background-size:100%;
 }
 @mixin transform($degree,$scaleX:1){
 	-webkit-transform: rotate($degree) scaleX($scaleX);
@@ -795,34 +796,44 @@ $tile_caption_height:40px;
 	transform: rotate($degree) scaleX($scaleX);
 }
 .ladder-wrap{
-	position:relative;
-	bottom:-120px;	
-	/*height:600px;*/	
+	position:absolute;
+	top:175px;
+	width:535px;
+	height:1400px;	
 }
 
 .ladder1{
 	@extend .ladder;
 	@include transform(-20deg,-1);
-	background-size:42%;
+	/*background-size:42%;*/
+	width:240px;
+	height:240px;
+	left:90px;
 }
 .ladder2{
 	@extend .ladder;
 	@include transform(35deg);
-	background-size:55%;
-	top: 228px;
-  	left: -75px;
+	/*background-size:55%;*/
+	width:360px;
+	height:360px;
+	top: 198px;
+  	left: -50px;
 }
 .ladder3{
 	@extend .ladder;
 	@include transform(-20deg,-1);
-	background-size:68%;
-	top: 530px;
-  	left: 105px;	
+	/*background-size:68%;*/
+	width:420px;
+	height:420px;
+	top: 520px;
+  	left: 124px;
 }
 .ladder4{
 	@extend .ladder;
-	top: 970px;
-  	left: -50px;
+	width: 535px;
+	height: 495px;
+	top: 952px;
+  	left: -95px;
 }
 
 

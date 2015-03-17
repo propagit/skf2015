@@ -11,29 +11,15 @@
 <link rel="stylesheet" href="<?=base_url()?>frontend-assets/bootstrap-3.2.2/css/bootstrap.min.css">
 <!-- FA -->
 <link rel="stylesheet" href="<?=base_url()?>frontend-assets/font-awesome-4.3.0/css/font-awesome.min.css">
-
-<!-- jQuery -->
-<script src="<?=base_url()?>frontend-assets/js/jquery-1.11.2.min.js"></script>
-<!-- BSJS-->
-<script src="<?=base_url()?>frontend-assets/bootstrap-3.2.2/js/bootstrap.min.js"></script>
-
 <?php }else{ ?>
     <!-- BS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <!-- FA -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
-    
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- BSJS-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <?php } ?>
 
 
 <!--timer-->
-<script src="<?=base_url()?>frontend-assets/js/jquery.countdown-2.0.2/jquery.plugin.min.js"></script>
-<script src="<?=base_url()?>frontend-assets/js/jquery.countdown-2.0.2/jquery.countdown.min.js"></script>
 <link rel="stylesheet" href="<?=base_url()?>frontend-assets/js/jquery.countdown-2.0.2/jquery.countdown.css">
 
 <!-- app css -->
@@ -44,7 +30,7 @@
 
 <body>
 
-<div class="ladder-wrap hidden-md hidden-sm hidden-xs">
+<div id="side-ladder" class="ladder-wrap hidden-md hidden-sm hidden-xs">
     <div class="ladder1"></div>
     <div class="ladder2"></div>
     <div class="ladder3"></div>

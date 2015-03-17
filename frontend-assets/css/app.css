@@ -345,7 +345,7 @@ a {
   font-family: "Open Sans", sans-serif !important;
   width: 100%; }
   .cms-body a {
-    color: #ff7e00 !important; }
+    color: #b9e0e1 !important; }
   .cms-body img {
     width: 100%; }
   .cms-body img.img-no-bootstrap {
@@ -476,14 +476,16 @@ a {
   background-image: url(../img/ladder.png);
   position: absolute;
   background-repeat: no-repeat;
-  width: 535px;
-  height: 495px;
-  background-position: center center; }
+  /*width: 535px;
+  height: 495px;*/
+  background-position: center center;
+  background-size: 100%; }
 
 .ladder-wrap {
-  position: relative;
-  bottom: -120px;
-  /*height:600px;*/ }
+  position: absolute;
+  top: 175px;
+  width: 535px;
+  height: 1400px; }
 
 .ladder1 {
   -webkit-transform: rotate(-20deg) scaleX(-1);
@@ -491,7 +493,10 @@ a {
   -ms-transform: rotate(-20deg) scaleX(-1);
   -o-transform: rotate(-20deg) scaleX(-1);
   transform: rotate(-20deg) scaleX(-1);
-  background-size: 42%; }
+  /*background-size:42%;*/
+  width: 240px;
+  height: 240px;
+  left: 90px; }
 
 .ladder2 {
   -webkit-transform: rotate(35deg) scaleX(1);
@@ -499,9 +504,11 @@ a {
   -ms-transform: rotate(35deg) scaleX(1);
   -o-transform: rotate(35deg) scaleX(1);
   transform: rotate(35deg) scaleX(1);
-  background-size: 55%;
-  top: 228px;
-  left: -75px; }
+  /*background-size:55%;*/
+  width: 360px;
+  height: 360px;
+  top: 198px;
+  left: -50px; }
 
 .ladder3 {
   -webkit-transform: rotate(-20deg) scaleX(-1);
@@ -509,13 +516,17 @@ a {
   -ms-transform: rotate(-20deg) scaleX(-1);
   -o-transform: rotate(-20deg) scaleX(-1);
   transform: rotate(-20deg) scaleX(-1);
-  background-size: 68%;
-  top: 530px;
-  left: 105px; }
+  /*background-size:68%;*/
+  width: 420px;
+  height: 420px;
+  top: 520px;
+  left: 124px; }
 
 .ladder4 {
-  top: 970px;
-  left: -50px; }
+  width: 535px;
+  height: 495px;
+  top: 952px;
+  left: -95px; }
 
 /*Helpers*/
 .x-gutters {
