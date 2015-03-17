@@ -29,18 +29,18 @@
                     <label class="cpp-label">
                         Produced by
                     </label>
-                    <img src="<?=base_url();?>frontend-assets/img/core/city-port-phillip-logo.png" alt="city-port-phillip-logo.png" title="City Of Port Phillip Logo">
+                    <img class="city-pp-logo" src="<?=base_url();?>frontend-assets/img/core/city-port-phillip-logo.png" alt="city-port-phillip-logo.png" title="City Of Port Phillip Logo">
                 </div>
             </div>
             
             <div class="col-md-8 block">
                 <div class="rt-block">
                     <label>Government Partners</label>
-                    <div class="col-md-7 x-gutters">
+                    <div class="col-md-7 x-gutters gov-sp scr-aus">
                         <img src="<?=base_url();?>frontend-assets/img/core/screen-australia-logo.png" alt="screen-australia-logo.png" title="Screen Australia Logo">
                     </div>
                     
-                    <div class="col-md-5 x-gutters">
+                    <div class="col-md-5 x-gutters gov-sp film-vic">
                         <img src="<?=base_url();?>frontend-assets/img/core/flim-vic-logo.png" alt="flim-vic-logo.png" title="Flim Victoria Logo">
                     </div>
                     <label class="skf-ack">The St Kilda Film Festival acknowledges the financial assistance of Screen Australia and Film Victoria.</label>
@@ -51,7 +51,7 @@
     
     <div class="quick-links">
         <div class="container">
-            <div class="col-md-8 block pull">
+            <div class="col-md-8 block">
                 <div class="rt-block">
                     <div class="col-md-7 x-gutters">
                         <h6>St Kilda Flim Festival</h6>
@@ -90,43 +90,8 @@
     </div>
     
     
-</footer>
-
-   
-
-<?php
-	$opening = $this->menu_model->get_opening_date();
-	#print_r($opening);
-?> 
-
-<?php if(ENVIRONMENT == 'development'){ ?>
-<!-- jQuery -->
-<script src="<?=base_url()?>frontend-assets/js/jquery-1.11.2.min.js"></script>
-<!-- BSJS-->
-<script src="<?=base_url()?>frontend-assets/bootstrap-3.2.2/js/bootstrap.min.js"></script>
-
-<?php }else{ ?>  
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- BSJS-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<?php } ?>
-
-
-<!--timer-->
-<script src="<?=base_url()?>frontend-assets/js/jquery.countdown-2.0.2/jquery.plugin.min.js"></script>
-<script src="<?=base_url()?>frontend-assets/js/jquery.countdown-2.0.2/jquery.countdown.min.js"></script>
-<!--app.script.js-->
-<script src="<?=base_url()?>frontend-assets/js/app.scripts.js"></script>
-    
+</footer>  
 <script>
-$('#countdown-timer').countdown({
-	until: new Date(2015,5-1,24),
-	padZeroes: true,
-	labels: ['YEARS', 'MONTHS', 'WEEKS', 'DAYS', 'HOURS', 'MINS', 'SECS'],
-	
-}); 
-
 $(function(){
 	initLadders();
 	

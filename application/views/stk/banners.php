@@ -10,7 +10,7 @@
             ?>
             <div class="item <?=!$count ? 'active' : '';?>">
                 <img src="<?=base_url().'photos/news_sticker/'.$alls['image'];?>" />
-                <div class="carousel-caption">
+                <div class="carousel-caption hidden-xs">
                     <h1><?=$alls['subheading'];?></h1>
                     <h4><?=$alls['description']?></h4>
                 </div>
