@@ -10,6 +10,7 @@
 /* turquoise*/
 /* grey */
 /* light turquise - cms body bg*/
+/* cms body copy anchors*/
 /* white */
 /* black */
 /* header fonts, special case font*/
@@ -243,7 +244,8 @@ a {
       text-align: center;
       line-height: 40px;
       text-align: center;
-      font-size: 26px; }
+      font-size: 26px;
+      color: #3d3d3c !important; }
 
 .label {
   font-size: 14px;
@@ -342,6 +344,8 @@ a {
   float: left;
   font-family: "Open Sans", sans-serif !important;
   width: 100%; }
+  .cms-body a {
+    color: #ff7e00 !important; }
   .cms-body img {
     width: 100%; }
   .cms-body img.img-no-bootstrap {

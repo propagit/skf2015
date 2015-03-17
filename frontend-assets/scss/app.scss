@@ -12,6 +12,7 @@ $color2:#ffef3f; /* yellow */
 $color3:#006f80; /* turquoise*/
 $color4:#3d3d3c; /* grey */
 $color5:#b9e0e1; /* light turquise - cms body bg*/
+$color6:#FF7E00; /* cms body copy anchors*/
 $white:#fff; /* white */
 $black:#1d1d1b; /* black */
 
@@ -430,6 +431,7 @@ $nav_height:70px;
 			line-height: $sl_dim;
   			text-align: center;
   			font-size: 26px;	
+			color:$color4 !important;
 	
 		}
 	}
@@ -589,6 +591,10 @@ $tile_caption_height:40px;
 	float:left;
 	font-family:$font2 !important;
 	width:100%;
+	
+	a{
+		color:$color6 !important;	
+	}
 	
 	img{
 		width:100%;	

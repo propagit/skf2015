@@ -38,6 +38,8 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 define('BANNER_WIDTH',770);
 define('BANNER_HEIGHT',418);
+define('AD_BANNER_WIDTH',1180);
+define('AD_BANNER_HEIGHT',85);
 define('CUTE_UPLOAD_PATH','/skf2015/js/cute');
 
 /* End of file constants.php */

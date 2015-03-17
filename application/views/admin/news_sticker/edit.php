@@ -26,7 +26,7 @@ function updateNews() {
         <dl class="news"><dt>Link to</dt><dd><input type="text" class="medium" name="url" id="url" value="<?=$news['url']?>" /></dd></dl>
         <div style="clear:both"></div><br/>
     	<dl class="news"><dt>Publish</dt><dd><input type="checkbox" name="published"<?php if($news['published']) print ' checked="checked"'; ?> /></dd></dl></dl>
-    	<dl class="news"><dt>Preview Image</dt><dd><input type="file" name="userfile" /><i><strong>(1170px x 340px)</strong></i></dd></dl>
+    	<dl class="news"><dt>Preview Image</dt><dd><input type="file" name="userfile" /><i><strong>(<?=BANNER_WIDTH;?>px x <?=BANNER_HEIGHT;?>px)</strong></i></dd></dl>
         <div style="clear:both"></div><br/>
     	<dl class="news"><dt>&nbsp;</dt><dd><img src="<?=base_url()?>photos/news_sticker/<?=$news['image']?>" width="100%"/>
     	</dd></dl>

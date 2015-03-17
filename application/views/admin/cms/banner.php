@@ -28,7 +28,7 @@ function deletebanner(id) {
 			echo $this->session->flashdata('err_upload');
 		}
 	?>
-    <p>Add new banner by browsing your computer and uploading them. Please upload an image with size of <b>1170 pixel width</b> and <b>128 pixel height</b> for the best view.</p><br />
+    <p>Add new banner by browsing your computer and uploading them. Please upload an image with size of <b><?=AD_BANNER_WIDTH;?> pixel width</b> and <b><?=AD_BANNER_HEIGHT;?> pixel height</b> for the best view.</p><br />
     <form method="post" enctype="multipart/form-data" action="<?=base_url()?>admin/cms/addbanner">
     <input type="file" name="banner" />
     <p><br /><input type="submit" class="button rounded" value="Upload" /></p>

@@ -351,7 +351,7 @@ class Cms extends CI_Controller {
 	function uploadimage($path,$filename) {
 		$config['upload_path'] = $path;
 		$config['allowed_types'] = 'gif|jpg|png|swf';
-		$config['max_size']	= '1024'; // 1 MB
+		$config['max_size']	= '2048'; // 2 MB
 		//$config['max_width']  = '500';
 		//$config['max_height']  = '500';
 		$config['overwrite'] = FALSE;
