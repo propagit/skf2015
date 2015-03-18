@@ -42,5 +42,11 @@ define('AD_BANNER_WIDTH',1180);
 define('AD_BANNER_HEIGHT',85);
 define('CUTE_UPLOAD_PATH','/skf2015/js/cute');
 
+/* social links*/
+define('FACEBOOK','https://www.facebook.com/StKildaFilmFestival');
+define('TWITTER','https://twitter.com/stkildafilmfest');
+define('YOUTUBE','https://www.youtube.com/user/stkildafilmfest');
+define('INSTAGRAM','https://instagram.com/stkildafilmfest');
+
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

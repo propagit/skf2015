@@ -3,8 +3,8 @@
         <h4>countdown</h4>
         <div id="countdown-timer" class="timer">
         
-           <?php if(0){ ?>
-           <!--<span class="countdown-row countdown-show4"><span class="countdown-section"><span class="countdown-amount">67</span><span class="countdown-period">DAYS</span></span><span class="countdown-section"><span class="countdown-amount">07</span><span class="countdown-period">HOURS</span></span><span class="countdown-section"><span class="countdown-amount">31</span><span class="countdown-period">MINS</span></span><span class="countdown-section"><span class="countdown-amount">16</span><span class="countdown-period">SECS</span></span></span>-->
+           <?php if(1){ ?>
+           <span class="countdown-row countdown-show4"><span class="countdown-section"><span class="countdown-amount">67</span><span class="countdown-period">DAYS</span></span><span class="countdown-section"><span class="countdown-amount">07</span><span class="countdown-period">HOURS</span></span><span class="countdown-section"><span class="countdown-amount">31</span><span class="countdown-period">MINS</span></span><span class="countdown-section"><span class="countdown-amount">16</span><span class="countdown-period">SECS</span></span></span>
            <?php } # for testing the css, comment $('#countdown-timer').countdown ... in the script below ?>
         </div>
         <span class="label skf-start-label">Until the St Kilda Film Festival starts</span>
@@ -14,10 +14,10 @@
         
         <h4>follow us</h4>
         <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="<?=FACEBOOK;?>"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="<?=TWITTER;?>"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="<?=YOUTUBE;?>"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="<?=INSTAGRAM;?>"><i class="fa fa-instagram"></i></a></li>
         </ul>
         
         <hr>
@@ -53,12 +53,12 @@
 	$opening = $this->menu_model->get_opening_date();
 ?>     
 <script>
-$('#countdown-timer').countdown({
+/*$('#countdown-timer').countdown({
 	until: new Date(2015,5-1,24),
 	padZeroes: true,
 	labels: ['YEARS', 'MONTHS', 'WEEKS', 'DAYS', 'HOURS', 'MINS', 'SECS'],
 	
-}); 
+}); */
 
 $(function(){
 	$('#newsletter-btn').click(function(){

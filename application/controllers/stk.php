@@ -37,7 +37,8 @@ class Stk extends CI_Controller {
 		
 		if($page == NULL || !$valid)
 		{
-			$this->load->view('stk/common/header-notfound',$data);
+			#$this->load->view('stk/common/header-notfound',$data);
+			$this->load->view('stk/common/header');
 		}
 		else
 		{
@@ -66,6 +67,14 @@ class Stk extends CI_Controller {
 		#$this->load->view('stk/advertisement');	
 		$this->load->view('stk/common/footer');
 	}
+	
+	function app_404()
+	{
+		$this->load->view('stk/common/header');
+		$this->load->view('stk/page-notfound');		
+		$this->load->view('stk/common/footer');	
+	}
+	
 	function vippack() {
 		$data['page'] = array('title' => 'Festival VIP Pack');
 		$data['links'] = $this->menu_model->get_links(1,0);

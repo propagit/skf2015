@@ -39,6 +39,8 @@
 */
 
 $route['default_controller'] = "stk";
+$route['404_override'] = "stk/app_404";
+
 
 $route['page-(:any)'] = "stk/page/$1";
 $route['search'] = "stk/search";

@@ -41,7 +41,7 @@
                     </div>
                     
                     <div class="col-md-5 x-gutters gov-sp film-vic">
-                        <img src="<?=base_url();?>frontend-assets/img/core/flim-vic-logo.png" alt="flim-vic-logo.png" title="Flim Victoria Logo">
+                        <img src="<?=base_url();?>frontend-assets/img/core/film-vic-logo.png" alt="film-vic-logo.png" title="Film Victoria Logo">
                     </div>
                     <label class="skf-ack">The St Kilda Film Festival acknowledges the financial assistance of Screen Australia and Film Victoria.</label>
                 </div>
@@ -54,17 +54,19 @@
             <div class="col-md-8 block">
                 <div class="rt-block">
                     <div class="col-md-7 x-gutters">
-                        <h6>St Kilda Flim Festival</h6>
+                        <h6>St Kilda Film Festival</h6>
                         <p>
                             The St Kilda Film Festival is one of Australia's<br>
-                            largest and oldest short film festival.
+                            largest and oldest short film festivals.
                         </p>
                         
-                        <ul>
+                        <?php if(0){ # commented until stage 2?>
+                        <!--<ul>
                             <li><a href="#">About</a></li>
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Festival Credits</a></li>
-                        </ul>
+                        </ul>-->
+                        <?php } ?>
                     </div> 
                     
                     <div class="col-md-5 x-gutters">
