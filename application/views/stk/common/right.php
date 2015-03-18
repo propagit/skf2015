@@ -14,10 +14,10 @@
         
         <h4>follow us</h4>
         <ul>
-            <li><a href="<?=FACEBOOK;?>"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="<?=TWITTER;?>"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="<?=YOUTUBE;?>"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="<?=INSTAGRAM;?>"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="<?=FACEBOOK;?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="<?=TWITTER;?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="<?=YOUTUBE;?>" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="<?=INSTAGRAM;?>" target="_blank"><i class="fa fa-instagram"></i></a></li>
         </ul>
         
         <hr>
