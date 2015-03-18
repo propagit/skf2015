@@ -192,8 +192,17 @@ $nav_height:70px;
 					  color:$black;
 				  }
 			  }
-		  }
-	  }
+			  
+			  &:last-child{
+					.dropdown-menu{
+						left:-119px;	
+					}
+			  }
+			  
+		  } /* & > li*/
+		  
+		  
+	  } /* nav*/
 	  
 	  .dropdown-menu{
 		  @extend .nav;
@@ -897,6 +906,12 @@ $tile_caption_height:40px;
 				  	padding:20px 25px;
 
 			  	   }
+				   
+				    &:last-child{
+						.dropdown-menu{
+							left:-125px;	
+						}
+			  		}
 		  		}
 	 	 } /*nav*/
 		 
@@ -963,6 +978,11 @@ $tile_caption_height:40px;
 					padding:15px 15px;
 
 				   }
+				    &:last-child{
+						.dropdown-menu{
+							left:-110px;	
+						}
+			  		}
 				}
 		 } /*nav*/
 		 

@@ -79,11 +79,13 @@ a {
 #top-nav {
   margin-top: 35px;
   position: relative;
+  /* nav*/
   /*navbar-nav*/
   /*mobile nav*/
   /* mob-nav*/ }
   #top-nav .nav, #top-nav .dropdown-menu, #top-nav .mob-nav .dropdown-menu {
-    background-color: #006f80; }
+    background-color: #006f80;
+    /* & > li*/ }
     #top-nav .nav > li > a, #top-nav .dropdown-menu > li > a, #top-nav .mob-nav .dropdown-menu > li > a {
       font-family: "Open Sans", sans-serif;
       color: white;
@@ -96,6 +98,8 @@ a {
       #top-nav .nav > li > a:hover, #top-nav .dropdown-menu > li > a:hover, #top-nav .nav > li > a:focus, #top-nav .dropdown-menu > li > a:focus, #top-nav .nav > li > a:active, #top-nav .dropdown-menu > li > a:active {
         background-color: #ffef3f;
         color: #1d1d1b; }
+    #top-nav .nav > li:last-child .dropdown-menu, #top-nav .dropdown-menu > li:last-child .dropdown-menu {
+      left: -119px; }
   #top-nav .dropdown-menu {
     border: 0;
     border-radius: 0; }
@@ -573,6 +577,8 @@ a {
     #top-nav .nav > li > a, #top-nav .dropdown-menu > li > a, #top-nav .mob-nav .dropdown-menu > li > a {
       font-size: 14px;
       padding: 20px 25px; }
+    #top-nav .nav > li:last-child .dropdown-menu, #top-nav .dropdown-menu > li:last-child .dropdown-menu {
+      left: -125px; }
     #top-nav .navbar-nav {
       height: 60px; }
 
@@ -609,6 +615,8 @@ a {
     #top-nav .nav > li > a, #top-nav .dropdown-menu > li > a, #top-nav .mob-nav .dropdown-menu > li > a {
       font-size: 12px;
       padding: 15px 15px; }
+    #top-nav .nav > li:last-child .dropdown-menu, #top-nav .dropdown-menu > li:last-child .dropdown-menu {
+      left: -110px; }
     #top-nav .navbar-nav {
       height: 50px; }
 
