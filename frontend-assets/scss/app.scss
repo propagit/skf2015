@@ -24,6 +24,7 @@ $font5:'Open Sans', sans-serif;	/* nav font */
 
 /* default is turquoise*/
 @mixin overlay($a,$r:0,$g:111,$b:128){
+	background:$bg3;
 	background-color:rgba($r,$g,$b,$a);
     background-color: transparent\9;	
 }
@@ -98,7 +99,7 @@ $font5:'Open Sans', sans-serif;	/* nav font */
 
 body{
 	font-family:$font2;
-	background-color:$bg1;	
+	background-color:$bg1;
 }
 
 
@@ -259,24 +260,40 @@ $nav_height:70px;
 	  
 	  /*mobile nav*/
 	  .mob-nav{
-		  background-color:$bg3;
 		  padding:10px 0;
 		  float:left;
 		  width:100%;
+		  margin-top:-112px;
 		  
 		  .btn-navbar{
-			  	@extend .app-btn;
-				margin-right:15px;  
+			  	@extend .app-btn; 
+				background-color:$bg3;
+				color:$white;
+				min-width:180px;
+				height:65px;
+				font-size: 30px;
+  				font-weight: 300;
+				
+				&:hover,
+				&:focus{
+					color:$white;	
+				}
 		  }
 		  
+		  .nav-collapse{
+				margin-top:28px;	  
+		  }
 		  
 		  .nav{
+			  	background-color:transparent;
 				margin-top:10px; 
 				
 				 & > li{
+					background-color:$bg3; 
 					float:left;
 					width:100%;
 					padding:0;
+					margin-bottom:15px;
 					
 					& > a{
 						padding:10px 15px;
@@ -854,7 +871,6 @@ $tile_caption_height:40px;
 	top: 952px;
   	left: -95px;
 }
-
 
 
 /*Helpers*/

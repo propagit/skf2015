@@ -53,8 +53,7 @@
 </head>
 
 <body>
-
-<div id="side-ladder" class="ladder-wrap hidden-md hidden-sm hidden-xs">
+<div id="side-ladder" class="ladder-wrap hidden-sm hidden-xs">
     <div class="ladder1"></div>
     <div class="ladder2"></div>
     <div class="ladder3"></div>
@@ -62,7 +61,7 @@
 </div>
 <header>
 	<div id="header">
-    	<div class="container">
+    	<div class="container" id="app-container">
         	<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12 logo x-gutters">
                 <a href="<?=base_url();?>"><img src="<?=base_url();?>frontend-assets/img/core/logo.png" title="St Kilda Flim Festival" alt="logo.png"></a>
             </div>

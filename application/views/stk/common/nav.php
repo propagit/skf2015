@@ -55,11 +55,11 @@
     </ul>
     
     
-    
+    <!-- mobile nav -->
     
     <div class="mob-nav visible-xs">
         <button class="btn btn-navbar pull" data-target=".nav-collapse" data-toggle="collapse" type="button">
-           <i class="fa fa-align-justify"></i>
+           MENU
         </button>
         <div class="nav-collapse collapse push fw">
                 <ul class="nav">
@@ -86,7 +86,7 @@
                             
                     ?>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle <?=$active;?>" data-toggle="dropdown"><?=$link['name']?></a>
+                                    <a href="#" class="dropdown-toggle <?=$active;?>" data-toggle="dropdown"><?=$link['name']?> <i class="fa fa-plus"></i></a>
                                     <ul class="dropdown-menu" role="menu">
                                         <?php
                                             foreach($child as $childlink) {	

@@ -127,18 +127,30 @@ a {
     #top-nav .navbar-nav .dropdown:hover ul {
       display: block; }
   #top-nav .mob-nav {
-    background-color: #006f80;
     padding: 10px 0;
     float: left;
-    width: 100%; }
+    width: 100%;
+    margin-top: -112px; }
     #top-nav .mob-nav .btn-navbar {
-      margin-right: 15px; }
+      background-color: #006f80;
+      color: white;
+      min-width: 180px;
+      height: 65px;
+      font-size: 30px;
+      font-weight: 300; }
+      #top-nav .mob-nav .btn-navbar:hover, #top-nav .mob-nav .btn-navbar:focus {
+        color: white; }
+    #top-nav .mob-nav .nav-collapse {
+      margin-top: 28px; }
     #top-nav .mob-nav .nav, #top-nav .mob-nav .dropdown-menu {
+      background-color: transparent;
       margin-top: 10px; }
       #top-nav .mob-nav .nav > li, #top-nav .mob-nav .dropdown-menu > li {
+        background-color: #006f80;
         float: left;
         width: 100%;
-        padding: 0; }
+        padding: 0;
+        margin-bottom: 15px; }
         #top-nav .mob-nav .nav > li > a, #top-nav .mob-nav .dropdown-menu > li > a {
           padding: 10px 15px; }
     #top-nav .mob-nav .dropdown-menu {
@@ -161,6 +173,7 @@ a {
   width: 100%; }
 
 .caption, .carousel .carousel-caption, .tiles .tile .tile-caption {
+  background: #006f80;
   background-color: rgba(0, 111, 128, 0.75);
   background-color: transparent\9;
   right: 0;

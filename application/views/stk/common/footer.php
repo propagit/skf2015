@@ -95,12 +95,20 @@
 </footer>  
 <script>
 $(function(){
-	initLadders();
+	ladders.init();
 	
 	setTimeout(function(){
-		initLadders();
+		ladders.init();
 	},400);
+	
+	 ladders.respond();
+	$(window).resize(function() {
+        ladders.respond();
+		ladders.init();
+    });
 });
+
+
 </script>
 
 
