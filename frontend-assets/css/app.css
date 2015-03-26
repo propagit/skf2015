@@ -693,6 +693,13 @@ a {
     padding-top: 55px; }
     #header .logo img {
       width: 80%; }
+    #header .event .date {
+      font-size: 30px;
+      line-height: 38px; }
+    #header .event .featured {
+      font-size: 20px;
+      line-height: 26px;
+      margin-top: 20px; }
 
   .x-l-gutter {
     padding-right: 0px; }
