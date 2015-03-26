@@ -106,6 +106,16 @@ $(function(){
         ladders.respond();
 		ladders.init();
     });
+	
+	// ADD SLIDEDOWN ANIMATION TO DROPDOWN //
+	$('.mob-dd').on('show.bs.dropdown', function(e){
+	  $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+	});
+	
+	// ADD SLIDEUP ANIMATION TO DROPDOWN //
+	$('.mob-dd').on('hide.bs.dropdown', function(e){
+	  $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+	});
 });
 
 

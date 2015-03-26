@@ -3,13 +3,9 @@
 	<div class="col-md-8 x-l-gutter">
 		<?php $this->load->view('stk/banners');?>
 	</div>
-    
-    <div class="col-md-4 x-r-gutter">
+    <div class="col-md-4 x-r-gutter hidden-xs">
         <?php $this->load->view('stk/common/right');?>    
     </div>
-    
-    
-    
     <div class="col-md-12 x-gutters tiles">
     	<a href="http://www.stkildafilmfestival.com.au/2015/page-265/top-100-short-films">
         <div class="col-md-6 col-xs-12 x-l-gutter tile">
@@ -28,5 +24,9 @@
             </div>
         </div>
         </a>
+    </div>
+    
+    <div class="col-md-4 x-r-gutter visible-xs">
+        <?php $this->load->view('stk/common/right');?>    
     </div>
 </div>

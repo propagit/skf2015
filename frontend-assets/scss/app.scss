@@ -6,6 +6,7 @@ $bg2:#ffef3f;/* yellow*/
 $bg3:#006f80;/* turquoise*/
 $bg4:#3d3d3c; /* grey*/
 $bg5:#b9e0e1; /* light turquise - cms body bg*/
+$bg6:#00909b; /* 75% of $bg3  used in sub nav of the mobile nav*/
 
 $color1:#79c7cc; /* opal blue*/
 $color2:#ffef3f; /* yellow */
@@ -21,6 +22,7 @@ $font2:'Open Sans', sans-serif;	 /* body copy*/
 $font3:'Open Sans Condensed', sans-serif; /* aside - panel heading*/
 $font4:'Open Sans', sans-serif;	/* carousel caption font*/
 $font5:'Open Sans', sans-serif;	/* nav font */
+$fa:'FontAwesome';
 
 /* default is turquoise*/
 @mixin overlay($a,$r:0,$g:111,$b:128){
@@ -162,6 +164,19 @@ a{
 			flex:0.5;
 		}
 	}
+	
+	.mini-ladders{
+		position:absolute;
+		top:25px;
+		left:-35px;	
+	}
+	
+	.mob-header{
+		padding-right:15px; 
+		img{
+			width:100%;	
+		}
+	}
 } /* header */
 
 
@@ -263,16 +278,17 @@ $nav_height:70px;
 		  padding:10px 0;
 		  float:left;
 		  width:100%;
-		  margin-top:-112px;
+		  margin-top:-136px;
 		  
 		  .btn-navbar{
 			  	@extend .app-btn; 
 				background-color:$bg3;
 				color:$white;
-				min-width:180px;
+				/*min-width:180px;*/
 				height:65px;
 				font-size: 30px;
   				font-weight: 300;
+				width:28%;
 				
 				&:hover,
 				&:focus{
@@ -281,10 +297,11 @@ $nav_height:70px;
 		  }
 		  
 		  .nav-collapse{
-				margin-top:28px;	  
+				margin-top:52px;	  
 		  }
 		  
 		  .nav{
+			  	background:none;
 			  	background-color:transparent;
 				margin-top:10px; 
 				
@@ -297,6 +314,23 @@ $nav_height:70px;
 					
 					& > a{
 						padding:10px 15px;
+						
+						&::after{
+							content:"+"; /* did not use FontAwesome here due to font weight issue*/
+							  font-size: 30px;
+							  position: absolute;
+							  top: 0;
+							  margin-left: 15px;
+						}
+					}
+				}
+				
+				& > li.open{
+					& > a{
+						&::after{
+							content:"_";	
+							top:-13px;
+						}
 					}
 				}
 		  }
@@ -309,14 +343,25 @@ $nav_height:70px;
 				box-shadow:none;
 				border:none;
 				left:0 !important;
+				background:$bg1;
+				background-color:$bg1;
+				margin-top: 0px;
+  				padding-top: 15px;
 				
 				& > li{
+					background:$bg6;
+					background-color:$bg6;
+					
 					& > a{
 						float:left;
 						width:100%;	
 						padding-top:8px;
 						padding-bottom:8px;	
 						padding-left:25px; 	
+						
+						&::after{
+							content:"";	
+						}
 					}
 				}
 		  }
@@ -633,6 +678,7 @@ $tile_caption_height:40px;
 	
 	img{
 		width:100%;	
+		height:auto;
 	}
 	
 	img.img-no-bootstrap{
@@ -1008,6 +1054,7 @@ $tile_caption_height:40px;
 	} /* top-nav*/	
 	
 	#side-panel{
+
 		.timer{
 			.countdown-row{
 				margin-left:-60px;
@@ -1096,15 +1143,77 @@ $tile_caption_height:40px;
 
 @media (max-width: 767px) {
 	#header{
-		padding-top:30px;
+		padding-top:15px;
 		
+		.logo{
+			padding-left:90px;	
+			
+			img{
+				width:60%;	
+			}
+		}
+		
+		.event{
+			margin-top:0;
+			
+			.date{
+				font-size:22px;
+				line-height:26px;
+			}
+		}
+	}
+	
+	.carousel{
+		
+		.carousel-caption{
+			background:none;
+			background-color:transparent;
+			
+			h1{
+				text-align:center;	
+			}
+			h4{
+				display:none;	
+			}
+	
+		} /*carousel-caption*/
+		
+	} /*carousel*/
+	
+	.tiles{
+		margin-top:0;
+		
+		.tile{
+			margin-bottom:0;
+			
+			.tile-caption{
+				background:none;
+				background-color:transparent;
+				
+				h1{
+					text-align:center;
+					margin-top:-15%;
+				}
+			}
+		}
+	} /*tiles*/
+	
+	#top-nav{
+		margin-top:-2px;	
 	}
 	
 	#side-panel{
+		margin:0;
+		
+		ul{
+			li{
+				margin-right:12%;	
+			}
+		}
 		
 		hr{
 			 margin-top: 0;
- 			 margin-bottom: 16.8px;	
+ 			 margin-bottom:50px;	
 		}
 		
 		h4{
@@ -1113,9 +1222,10 @@ $tile_caption_height:40px;
 		
 		.label{
 			text-align:left;
-			line-height:20px;
+			line-height:28px;
 			float:left;	
 		}
+
 		
 		.timer{
 			.countdown-row{
@@ -1169,13 +1279,18 @@ $tile_caption_height:40px;
 			font-size:10px;
 			line-height:12px;	
 		}
-		
+		.skf-news-label{
+			font-size:10px;	
+			width:100%;
+		}
 	} /* side-panel*/
 	
 	#footer{
 		margin-top:0;	
 		
 		.sponsors{
+			margin-top:0;
+			
 			label{
 				  font-size: 18px;
   				  font-weight: 500;	
@@ -1198,6 +1313,7 @@ $tile_caption_height:40px;
 }
 
 @media (min-width:768px){
+
 	#top-nav{
 		.dropdown-menu{
 			   & > li{
@@ -1210,3 +1326,39 @@ $tile_caption_height:40px;
 		}
 	} /* top-nav */
 }
+
+@media (max-width: 480px) {
+	#top-nav{
+
+	  
+	  /*mobile nav*/
+	  .mob-nav{
+		  margin-top:-75px;
+		  
+		  .btn-navbar{
+			    height: 38px;
+				font-size: 16px;
+				line-height: 38px;
+				padding: 0;
+		  }
+		  
+		  .nav-collapse{
+			  margin-top:18px;	  
+		  }
+	  } /* mob-nav*/
+	
+	
+		
+	} /*top-nav*/
+	
+	#side-panel{
+		
+		ul{
+			li{
+				margin-right:8%;	
+			}
+		}
+		
+	}
+}
+

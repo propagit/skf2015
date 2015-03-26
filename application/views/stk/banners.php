@@ -11,7 +11,7 @@
             <div class="item <?=!$count ? 'active' : '';?>">
                 <a href="<?=$alls['url'] ? $alls['url'] : '#';?>">
                     <img src="<?=base_url().'photos/news_sticker/'.$alls['image'];?>" />
-                    <div class="carousel-caption hidden-xs">
+                    <div class="carousel-caption">
                         <h1><?=$alls['subheading'];?></h1>
                         <h4><?=$alls['description']?></h4>
                     </div>

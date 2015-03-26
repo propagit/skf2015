@@ -24,7 +24,7 @@
         <div class="clear"></div>
         
         <h4>subscribe</h4>
-        <span class="label hidden-xs">News delivered straight to your inbox</span>
+        <span class="label skf-news-label">News delivered straight to your inbox</span>
         <div class="subscribe-box">
             <input type="text" id="newsletter-email">
             <button type="button" class="btn subscribe-btn" id="newsletter-btn">Enter</button>

@@ -85,8 +85,8 @@
                                 }
                             
                     ?>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle <?=$active;?>" data-toggle="dropdown"><?=$link['name']?> <i class="fa fa-plus"></i></a>
+                                <li class="dropdown mob-dd">
+                                    <a href="#" class="dropdown-toggle <?=$active;?>" data-toggle="dropdown"><?=$link['name']?></a>
                                     <ul class="dropdown-menu" role="menu">
                                         <?php
                                             foreach($child as $childlink) {	
