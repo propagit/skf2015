@@ -146,10 +146,11 @@ a{
 	.event{
 		color:$color2;	
 		display:flex;
-		margin-top:25px;
+		/*margin-top:25px;*/
 		
 		span{
-			flex:1;
+			/*flex:1;*/
+			display:block;
 		}
 		
 		.date{
@@ -161,7 +162,8 @@ a{
 			font-size: 24px;
 			line-height:30px;
   			font-weight: 400;
-			flex:0.5;
+			/*flex:0.5;*/
+			margin-top:5px;
 		}
 	}
 	
@@ -175,6 +177,13 @@ a{
 		padding-right:15px; 
 		img{
 			width:100%;	
+		}
+	}
+	.council-top-logo{
+		img{
+			position:absolute;
+			right:0;
+			bottom:0;	
 		}
 	}
 } /* header */
@@ -1054,7 +1063,11 @@ $tile_caption_height:40px;
 	} /* top-nav*/	
 	
 	#side-panel{
-
+		ul{
+			li{
+				margin-right:12%;	
+			}
+		}
 		.timer{
 			.countdown-row{
 				margin-left:-60px;
@@ -1078,6 +1091,12 @@ $tile_caption_height:40px;
 }
 
 @media (max-width:991px){
+	
+	.ladder-wrap{
+		top:0 !important;	
+	}
+	
+	
 	#header{
 		padding-top:55px;	
 		
@@ -1166,16 +1185,11 @@ $tile_caption_height:40px;
 	.carousel{
 		
 		.carousel-caption{
-			background:none;
-			background-color:transparent;
-			
-			h1{
-				text-align:center;	
-			}
-			h4{
-				display:none;	
-			}
 	
+			h1{
+				font-size:20px;
+			}
+			
 		} /*carousel-caption*/
 		
 	} /*carousel*/
@@ -1186,15 +1200,6 @@ $tile_caption_height:40px;
 		.tile{
 			margin-bottom:0;
 			
-			.tile-caption{
-				background:none;
-				background-color:transparent;
-				
-				h1{
-					text-align:center;
-					margin-top:-15%;
-				}
-			}
 		}
 	} /*tiles*/
 	
@@ -1264,17 +1269,6 @@ $tile_caption_height:40px;
 			
 		} /*subscribe-box*/
 		
-		.social-links{			
-			li{
-				margin-right:10px;
-				
-				a{
-					
-			
-				}
-			}
-			
-		}
 		.skf-start-label{
 			font-size:10px;
 			line-height:12px;	

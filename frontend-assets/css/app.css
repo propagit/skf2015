@@ -63,9 +63,10 @@ a {
   #header .event {
     color: #ffef3f;
     display: flex;
-    margin-top: 25px; }
+    /*margin-top:25px;*/ }
     #header .event span {
-      flex: 1; }
+      /*flex:1;*/
+      display: block; }
     #header .event .date {
       font-family: "Oxygen Mono";
       font-size: 42px;
@@ -74,7 +75,8 @@ a {
       font-size: 24px;
       line-height: 30px;
       font-weight: 400;
-      flex: 0.5; }
+      /*flex:0.5;*/
+      margin-top: 5px; }
   #header .mini-ladders {
     position: absolute;
     top: 25px;
@@ -83,6 +85,10 @@ a {
     padding-right: 15px; }
     #header .mob-header img {
       width: 100%; }
+  #header .council-top-logo img {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
 
 /* header */
 #top-nav {
@@ -668,6 +674,8 @@ a {
   /* top-nav*/
   #side-panel {
     /* timer */ }
+    #side-panel ul li {
+      margin-right: 12%; }
     #side-panel .timer {
       /* countdown-row*/ }
       #side-panel .timer .countdown-row {
@@ -678,6 +686,9 @@ a {
 
   /* side-panel*/ }
 @media (max-width: 991px) {
+  .ladder-wrap {
+    top: 0 !important; }
+
   #header {
     padding-top: 55px; }
     #header .logo img {
@@ -729,25 +740,14 @@ a {
 
   .carousel {
     /*carousel-caption*/ }
-    .carousel .carousel-caption {
-      background: none;
-      background-color: transparent; }
-      .carousel .carousel-caption h1, .carousel .carousel-caption h4, .carousel .carousel-caption .tiles .tile .tile-caption h4, .tiles .tile .tile-caption .carousel .carousel-caption h4 {
-        text-align: center; }
-      .carousel .carousel-caption h4 {
-        display: none; }
+    .carousel .carousel-caption h1, .carousel .carousel-caption h4, .carousel .carousel-caption .tiles .tile .tile-caption h4, .tiles .tile .tile-caption .carousel .carousel-caption h4 {
+      font-size: 20px; }
 
   /*carousel*/
   .tiles {
     margin-top: 0; }
     .tiles .tile {
       margin-bottom: 0; }
-      .tiles .tile .tile-caption {
-        background: none;
-        background-color: transparent; }
-        .tiles .tile .tile-caption h1, .tiles .tile .tile-caption h4 {
-          text-align: center;
-          margin-top: -15%; }
 
   /*tiles*/
   #top-nav {
@@ -787,8 +787,6 @@ a {
       width: 30%; }
     #side-panel .subscribe-box input[type="text"] {
       width: 64%; }
-    #side-panel .social-links li, #side-panel ul li {
-      margin-right: 10px; }
     #side-panel .skf-start-label {
       font-size: 10px;
       line-height: 12px; }

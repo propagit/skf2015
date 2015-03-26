@@ -13,7 +13,7 @@
                     <img src="<?=base_url().'photos/news_sticker/'.$alls['image'];?>" />
                     <div class="carousel-caption">
                         <h1><?=$alls['subheading'];?></h1>
-                        <h4><?=$alls['description']?></h4>
+                        <h4 class="hidden-xs"><?=$alls['description']?></h4>
                     </div>
                 </a>
             </div>

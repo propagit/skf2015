@@ -53,7 +53,7 @@
 </head>
 
 <body>
-<div id="side-ladder" class="ladder-wrap hidden-sm hidden-xs">
+<div id="side-ladder" class="ladder-wrap hidden-xs">
     <div class="ladder1"></div>
     <div class="ladder2"></div>
     <div class="ladder3"></div>
@@ -62,25 +62,31 @@
 <header>
 	<div id="header">
     	<div class="container hidden-xs" id="app-container">
-        	<div class="col-lg-7 col-md-7 col-sm-6 col-xs-8 logo x-gutters">
+        	<div class="col-lg-5 col-md-5 col-sm-6 logo x-gutters">
                 <a href="<?=base_url();?>"><img src="<?=base_url();?>frontend-assets/img/core/logo.png" title="St Kilda Flim Festival" alt="logo.png"></a>
             </div>
             
-            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-4 event x-gutters">
-                <span class="date">
-                	<span>
-                        21 - 30<br>
-                        May<br>
-                        2015
+            <div class="col-lg-7 col-md-7 col-sm-6 event x-gutters">
+            	<div class="col-xs-6 x-gutters">
+                    <span class="date">
+                        <span>
+                            21 - 30<br>
+                            May<br>
+                            2015
+                        </span>
                     </span>
-                </span>
-                <span class="featured  hidden-xs">
-                    Australia's<br>
-                    Top 100<br>
-                    Short Films
-                </span>
+                    <span class="featured  hidden-xs">
+                        Australia's<br>
+                        Top 100<br>
+                        Short Films
+                    </span>
+                </div>
+                <div class="col-xs-6 x-gutters council-top-logo hidden-xs">
+                	<img src="<?=base_url();?>frontend-assets/img/core/city-port-phillip-logo-top.png" title="St Kilda Flim Festival" alt="logo.png">
+                </div>
             </div>
         </div>
+        
         <div class="visible-xs mob-header">
         	<a href="<?=base_url();?>"><img src="<?=base_url();?>frontend-assets/img/mob-header.png" title="St Kilda Flim Festival" alt="logo.png"></a>
         </div>
