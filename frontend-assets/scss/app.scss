@@ -678,7 +678,7 @@ $tile_caption_height:40px;
 	
 	img{
 		width:100%;	
-		height:auto;
+		/*height:auto;*/
 	}
 	
 	img.img-no-bootstrap{
@@ -1284,6 +1284,13 @@ $tile_caption_height:40px;
 			width:100%;
 		}
 	} /* side-panel*/
+	
+	.cms-body{
+	
+		img{
+			height:auto;
+		}
+	}
 	
 	#footer{
 		margin-top:0;	
