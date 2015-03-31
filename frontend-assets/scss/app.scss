@@ -1,5 +1,5 @@
 /* SCSS Document */
-@import url(//fonts.googleapis.com/css?family=Oxygen+Mono|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Open+Sans+Condensed:300,300italic,700);
+@import url(//fonts.googleapis.com/css?family=Oxygen+Mono|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Open+Sans+Condensed:300,300italic,700|Inconsolata:400,700);
 
 $bg1:#79c7cc;/* opal blue*/
 $bg2:#ffef3f;/* yellow*/
@@ -17,10 +17,10 @@ $color6:#006f80; /* cms body copy anchors*/
 $white:#fff; /* white */
 $black:#1d1d1b; /* black */
 
-$font1:'Oxygen Mono'; /* header fonts, special case font*/	
+$font1:'Inconsolata'; /* header fonts, special case font, prev version - Oxygen Mono*/	
 $font2:'Open Sans', sans-serif;	 /* body copy*/
-$font3:'Open Sans Condensed', sans-serif; /* aside - panel heading*/
-$font4:'Open Sans', sans-serif;	/* carousel caption font*/
+$font3:'Inconsolata'; /* aside - panel heading*/
+$font4:'Inconsolata';	/* carousel caption font, prev version - 'Open Sans', sans-serif*/
 $font5:'Open Sans', sans-serif;	/* nav font */
 $fa:'FontAwesome';
 
@@ -138,7 +138,7 @@ a{
 	
 	.logo{
 		img{
-			max-width:335px;	
+			/*max-width:335px;	*/
 		}
 		
 	}
@@ -183,7 +183,8 @@ a{
 		img{
 			position:absolute;
 			right:0;
-			bottom:0;	
+			bottom:15px;
+			width:auto !important;	
 		}
 	}
 } /* header */
@@ -204,7 +205,7 @@ $nav_height:70px;
 				  font-family:$font2;
 				  color:$white;
 				  font-size: 16px;
-				  font-weight: 100;
+				  font-weight: 600;
 				  letter-spacing: 1px;
 				  /*padding-top:25px;
 				  padding-bottom:25px;*/
@@ -296,7 +297,7 @@ $nav_height:70px;
 				/*min-width:180px;*/
 				height:65px;
 				font-size: 30px;
-  				font-weight: 300;
+  				font-weight: 600;
 				width:28%;
 				
 				&:hover,
@@ -324,7 +325,7 @@ $nav_height:70px;
 					& > a{
 						padding:10px 15px;
 						
-						&::after{
+						&.dropdown-toggle::after{
 							content:"+"; /* did not use FontAwesome here due to font weight issue*/
 							  font-size: 30px;
 							  position: absolute;
@@ -395,7 +396,6 @@ $nav_height:70px;
 	left:0;
 	bottom:0;
 	padding:16px 20px;
-	font-family:$font5;
 	color:$white;
 	
 	h1{
@@ -406,12 +406,15 @@ $nav_height:70px;
 		text-transform:uppercase;
 		font-size: 16px;
 		line-height:22px;
-		font-weight: 100;	
+		font-weight: 100;
+		letter-spacing:2px;
+		font-family:$font3;	
 	}
 	h4{
 		@extend h1;	
 		font-size:13.5px;
 		text-transform:none;
+		font-family:$font2;
 	}
 	
 	
@@ -553,9 +556,11 @@ $nav_height:70px;
 	
 	
 	h4{
+		font-family:$font3;
 		font-weight:300;	
 		font-size: 23px;
 		margin:0;
+		letter-spacing:2px;
 	}
 	
 	.timer{
@@ -655,7 +660,7 @@ $tile_caption_height:40px;
 			h1{
 				font-size: 20px;
   				margin-top: -6px;
-				word-spacing:15px;
+				/*word-spacing:15px;*/
 			}
 		}
 		
@@ -720,6 +725,7 @@ $tile_caption_height:40px;
 	.content-text{
 		padding:0 35px;
 		display:block;
+		font-family:$font1;
 		
 		.heading-content1,
 		.heading-content2,
@@ -735,8 +741,9 @@ $tile_caption_height:40px;
 	h1,
 	.heading-content1{
 		font-size:24px;
-		letter-spacing:1px;
+		letter-spacing:2px;
 		font-weight:100;	
+		color:$black;
 	}
 	
 	h2,
@@ -747,8 +754,9 @@ $tile_caption_height:40px;
 	h3,
 	.heading-content3{
 		font-size:16px;
-		font-weight:600;
+		font-weight:700;
 		color:$color3;	
+		letter-spacing:2px;
 	}
 	
 	p,
@@ -888,7 +896,7 @@ $tile_caption_height:40px;
 }
 .ladder-wrap{
 	position:absolute;
-	top:175px;
+	top:185px;
 	width:535px;
 	height:1400px;	
 }
@@ -1047,7 +1055,7 @@ $tile_caption_height:40px;
 		  & > li{
 			  & > a{
 					font-size: 12px;
-					padding:15px 15px;
+					padding:15px 13px;
 
 				   }
 				    &:last-child{
@@ -1094,7 +1102,7 @@ $tile_caption_height:40px;
 @media (max-width:991px){
 	
 	.ladder-wrap{
-		top:0 !important;	
+		top:135px !important;	
 	}
 	
 	

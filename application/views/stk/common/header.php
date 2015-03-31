@@ -62,12 +62,20 @@
 <header>
 	<div id="header">
     	<div class="container hidden-xs" id="app-container">
-        	<div class="col-lg-5 col-md-5 col-sm-6 logo x-gutters">
+        	<div class="col-lg-12 col-md-12 col-sm-12 logo x-gutters">
                 <a href="<?=base_url();?>"><img src="<?=base_url();?>frontend-assets/img/core/logo.png" title="St Kilda Flim Festival" alt="logo.png"></a>
+                
+                <div class="council-top-logo hidden-xs">
+                	<img src="<?=base_url();?>frontend-assets/img/core/city-port-phillip-logo-top.png" title="St Kilda Flim Festival" alt="logo.png">
+                </div>
             </div>
             
-            <div class="col-lg-7 col-md-7 col-sm-6 event x-gutters">
-            	<div class="col-xs-6 x-gutters">
+           
+			<?php if(0){
+                # client request to add one image instead of text, kept for reference or if we need to change it back to Text
+            ?>
+            <!--<div class="col-lg-4 col-md-4 col-sm-4 event x-gutters">
+                <div class="col-xs-6 x-gutters">
                     <span class="date">
                         <span>
                             21 - 30<br>
@@ -81,14 +89,12 @@
                         Short Films
                     </span>
                 </div>
-                <div class="col-xs-6 x-gutters council-top-logo hidden-xs">
-                	<img src="<?=base_url();?>frontend-assets/img/core/city-port-phillip-logo-top.png" title="St Kilda Flim Festival" alt="logo.png">
-                </div>
-            </div>
+            </div>-->
+            <?php } ?> 
         </div>
         
         <div class="visible-xs mob-header">
-        	<a href="<?=base_url();?>"><img src="<?=base_url();?>frontend-assets/img/mob-header.png" title="St Kilda Flim Festival" alt="logo.png"></a>
+        	<a href="<?=base_url();?>"><img src="<?=base_url();?>frontend-assets/img/core/mob-header.png" title="St Kilda Flim Festival" alt="logo.png"></a>
         </div>
     </div>
 </header> 

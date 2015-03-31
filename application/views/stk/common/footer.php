@@ -95,16 +95,16 @@
 </footer>  
 <script>
 $(function(){
-	ladders.init();
+	// ladders.init();
 	
-	setTimeout(function(){
+	/*setTimeout(function(){
 		ladders.init();
-	},400);
+	},400);*/
 	
 	 ladders.respond();
 	$(window).resize(function() {
         ladders.respond();
-		ladders.init();
+		//ladders.init();
     });
 	
 	// ADD SLIDEDOWN ANIMATION TO DROPDOWN //

@@ -1,5 +1,5 @@
 /* SCSS Document */
-@import url(//fonts.googleapis.com/css?family=Oxygen+Mono|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Open+Sans+Condensed:300,300italic,700);
+@import url(//fonts.googleapis.com/css?family=Oxygen+Mono|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Open+Sans+Condensed:300,300italic,700|Inconsolata:400,700);
 /* opal blue*/
 /* yellow*/
 /* turquoise*/
@@ -14,10 +14,10 @@
 /* cms body copy anchors*/
 /* white */
 /* black */
-/* header fonts, special case font*/
+/* header fonts, special case font, prev version - Oxygen Mono*/
 /* body copy*/
 /* aside - panel heading*/
-/* carousel caption font*/
+/* carousel caption font, prev version - 'Open Sans', sans-serif*/
 /* nav font */
 /* default is turquoise*/
 .app-btn, #top-nav .mob-nav .btn-navbar, #side-panel .subscribe-box .subscribe-btn {
@@ -59,7 +59,7 @@ a {
 #header {
   padding-top: 75px; }
   #header .logo img {
-    max-width: 335px; }
+    /*max-width:335px;	*/ }
   #header .event {
     color: #ffef3f;
     display: flex;
@@ -68,7 +68,7 @@ a {
       /*flex:1;*/
       display: block; }
     #header .event .date {
-      font-family: "Oxygen Mono";
+      font-family: "Inconsolata";
       font-size: 42px;
       line-height: 50px; }
     #header .event .featured {
@@ -88,7 +88,8 @@ a {
   #header .council-top-logo img {
     position: absolute;
     right: 0;
-    bottom: 0; }
+    bottom: 15px;
+    width: auto !important; }
 
 /* header */
 #top-nav {
@@ -105,7 +106,7 @@ a {
       font-family: "Open Sans", sans-serif;
       color: white;
       font-size: 16px;
-      font-weight: 100;
+      font-weight: 600;
       letter-spacing: 1px;
       /*padding-top:25px;
       padding-bottom:25px;*/
@@ -152,7 +153,7 @@ a {
       /*min-width:180px;*/
       height: 65px;
       font-size: 30px;
-      font-weight: 300;
+      font-weight: 600;
       width: 28%; }
       #top-nav .mob-nav .btn-navbar:hover, #top-nav .mob-nav .btn-navbar:focus {
         color: white; }
@@ -170,7 +171,7 @@ a {
         margin-bottom: 15px; }
         #top-nav .mob-nav .nav > li > a, #top-nav .mob-nav .dropdown-menu > li > a {
           padding: 10px 15px; }
-          #top-nav .mob-nav .nav > li > a::after, #top-nav .mob-nav .dropdown-menu > li > a::after {
+          #top-nav .mob-nav .nav > li > a.dropdown-toggle::after, #top-nav .mob-nav .dropdown-menu > li > a.dropdown-toggle::after {
             content: "+";
             /* did not use FontAwesome here due to font weight issue*/
             font-size: 30px;
@@ -216,7 +217,6 @@ a {
   left: 0;
   bottom: 0;
   padding: 16px 20px;
-  font-family: "Open Sans", sans-serif;
   color: white; }
   .caption h1, .carousel .carousel-caption h1, .tiles .tile .tile-caption h1, .caption h4, .carousel .carousel-caption h4, .tiles .tile .tile-caption h4 {
     text-shadow: none;
@@ -226,10 +226,13 @@ a {
     text-transform: uppercase;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 100; }
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-family: "Inconsolata"; }
   .caption h4, .carousel .carousel-caption h4, .tiles .tile .tile-caption h4 {
     font-size: 13.5px;
-    text-transform: none; }
+    text-transform: none;
+    font-family: "Open Sans", sans-serif; }
 
 /*caption*/
 .carousel {
@@ -327,9 +330,11 @@ a {
     width: 100%;
     margin-top: 14.8px; }
   #side-panel h4 {
+    font-family: "Inconsolata";
     font-weight: 300;
     font-size: 23px;
-    margin: 0; }
+    margin: 0;
+    letter-spacing: 2px; }
   #side-panel .timer {
     color: #ffef3f;
     /* countdown-row*/ }
@@ -387,7 +392,7 @@ a {
     .tiles .tile .tile-caption h1, .tiles .tile .tile-caption h4 {
       font-size: 20px;
       margin-top: -6px;
-      word-spacing: 15px; }
+      /*word-spacing:15px;*/ }
   .tiles .tile img {
     width: 100%; }
 
@@ -423,7 +428,8 @@ a {
   .cms-body .heading-content3,
   .cms-body .content-text {
     padding: 0 35px;
-    display: block; }
+    display: block;
+    font-family: "Inconsolata"; }
     .cms-body .heading-content1 .heading-content1,
     .cms-body .heading-content1 .heading-content2,
     .cms-body .heading-content1 .heading-content3,
@@ -452,16 +458,18 @@ a {
   .cms-body h1, .cms-body .caption h4, .caption .cms-body h4, .cms-body .carousel .carousel-caption h4, .carousel .carousel-caption .cms-body h4, .cms-body .tiles .tile .tile-caption h4, .tiles .tile .tile-caption .cms-body h4,
   .cms-body .heading-content1 {
     font-size: 24px;
-    letter-spacing: 1px;
-    font-weight: 100; }
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: #1d1d1b; }
   .cms-body h2,
   .cms-body .heading-content2 {
     color: #1d1d1b; }
   .cms-body h3,
   .cms-body .heading-content3 {
     font-size: 16px;
-    font-weight: 600;
-    color: #006f80; }
+    font-weight: 700;
+    color: #006f80;
+    letter-spacing: 2px; }
   .cms-body p,
   .cms-body .content-text {
     color: #1d1d1b;
@@ -544,7 +552,7 @@ a {
 
 .ladder-wrap {
   position: absolute;
-  top: 175px;
+  top: 185px;
   width: 535px;
   height: 1400px; }
 
@@ -665,7 +673,7 @@ a {
     /*nav*/ }
     #top-nav .nav > li > a, #top-nav .dropdown-menu > li > a, #top-nav .mob-nav .dropdown-menu > li > a {
       font-size: 12px;
-      padding: 15px 15px; }
+      padding: 15px 13px; }
     #top-nav .nav > li:last-child .dropdown-menu, #top-nav .dropdown-menu > li:last-child .dropdown-menu {
       left: -85px; }
     #top-nav .navbar-nav {
@@ -687,7 +695,7 @@ a {
   /* side-panel*/ }
 @media (max-width: 991px) {
   .ladder-wrap {
-    top: 0 !important; }
+    top: 135px !important; }
 
   #header {
     padding-top: 55px; }
